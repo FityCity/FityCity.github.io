@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<collage version="2" format="4:3" orientation="landscape" theme="picturegrid" shadows="0" captions="1" albumUID="56cc75ee781c2fdc75c9e0c8a4b3e615">
+ <albumTitle>bg</albumTitle>
+ <albumDate>August, 2005</albumDate>
+ <background type="solid" color="FFFFFFFF"/>
+ <spacing value="0.000000"/>
+ <node x="0.000000" y="0.000000" w="0.330273" h="0.351642" theta="0.000000" scale="338.000000">
+  <theme>noborder</theme>
+  <src>[C]\Users\Romin Parekh\Downloads\Web Portal\Shield Theme\assets\img\bg\uni-sa.jpg</src>
+  <uid>b4b9baec89bdb3990000000000000000</uid>
+ </node>
+ <node x="0.000000" y="0.758569" w="1.000000" h="0.241431" theta="0.000000" scale="1024.000000">
+  <theme>noborder</theme>
+  <src>[C]\Users\Romin Parekh\Downloads\Web Portal\Shield Theme\assets\img\bg\cmua.jpg</src>
+  <uid>4a779c2c423d16172ce380e2d1ba2990</uid>
+ </node>
+ <node x="0.000000" y="0.351642" w="1.000000" h="0.406928" theta="0.000000" scale="1024.000000">
+  <theme>noborder</theme>
+  <src>[C]\Users\Romin Parekh\Downloads\Web Portal\Shield Theme\assets\img\bg\adelaide-city-council.jpg</src>
+  <uid>63226fe12d9e3ac00000000000000000</uid>
+ </node>
+ <node x="0.330273" y="0.000000" w="0.669727" h="0.351642" theta="0.000000" scale="686.000000">
+  <theme>noborder</theme>
+  <src>[C]\Users\Romin Parekh\Downloads\Web Portal\Shield Theme\assets\img\bg\mitise-health.jpg</src>
+  <uid>c57e2ba43994aabe0000000000000000</uid>
+ </node>
+</collage>
