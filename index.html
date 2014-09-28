@@ -1,559 +1,679 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="SHIELD - Free Bootstrap 3 Theme">
-    <meta name="author" content="Carlos Alvarez - Alvarez.is - blacktie.co">
-    <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Fit eCity">
+        <meta name="author" content="Romin Parekh Carnegie Mellon University Australia">
+        <link rel="shortcut icon" href="assets/ico/favicon.png">
 
-    <title> Fit eCity</title>
+        <title> Fit eCity</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
+        <!-- Bootstrap core CSS -->
+        <link href="assets/css/bootstrap.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="assets/css/main.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/icomoon.css">
-    <link href="assets/css/animate-custom.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="assets/css/main.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/icomoon.css">
+        <link href="assets/css/animate-custom.css" rel="stylesheet">
+
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="assets/js/html5shiv.js"></script>
+          <script src="assets/js/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body data-spy="scroll" data-offset="0" data-target="#navbar-main" onload="getYear()">
 
 
-    
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
-    
-    <script src="assets/js/jquery.min.js"></script>
-	<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
-    
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="assets/js/html5shiv.js"></script>
-      <script src="assets/js/respond.min.js"></script>
-    <![endif]-->
-  </head>
-
-  <body data-spy="scroll" data-offset="0" data-target="#navbar-main" onload="getYear()">
-  
-  
-  	<div id="navbar-main">
-      <!-- Fixed navbar -->
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon icon-globe" style="font-size:30px; color:#3498db;"></span>
-          </button>
-          <a class="navbar-brand hidden-xs hidden-sm" href="#home"><span class="icon icon-globe" style="font-size:18px; color:#3498db;"></span></a>
+        <div id="navbar-main">
+            <!-- Fixed navbar -->
+            <div class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon icon-globe" style="font-size:30px; color:#3498db;"></span>
+                        </button>
+                        <a class="navbar-brand hidden-xs hidden-sm" href="#home"><span class="icon icon-globe" style="font-size:18px; color:#3498db;"></span></a>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#home" class="smoothScroll">Home</a></li>
+                            <li> <a href="#about" class="smoothScroll"> About Us</a></li>
+                            <li> <a href="#services" class="smoothScroll"> Sponsors</a></li>
+                            <li> <a href="#team" class="smoothScroll"> Vendors</a></li>
+                            <li> <a href="#portfolio" class="smoothScroll"> Random Play</a></li>
+                            <!-- <li> <a href="#blog" class="smoothScroll"> Blog</a></li> -->
+                            <li> <a href="#contact" class="smoothScroll"> Contact</a></li>
+                            <li> <a href="#" class="smoothScroll"> <b>Login </b></a></li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div>
+            </div>
         </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="#home" class="smoothScroll">Home</a></li>
-			<li> <a href="#about" class="smoothScroll"> About Us</a></li>
-			<li> <a href="#services" class="smoothScroll"> Sponsors</a></li>
-			<li> <a href="#team" class="smoothScroll"> Vendors</a></li>
-			<li> <a href="#portfolio" class="smoothScroll"> Random Play</a></li>
-		   <!-- <li> <a href="#blog" class="smoothScroll"> Blog</a></li> -->
-			<li> <a href="#contact" class="smoothScroll"> Contact</a></li>
-                        <li> <a href="#" class="smoothScroll"> <b>Login </b></a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </div>
-    </div>
 
-  
-  
-		<!-- ==== HEADERWRAP ==== -->
-	    <div id="headerwrap" id="home" name="home">
-			<header class="clearfix">
-	  		 		<h1><span class="icon icon-trophy-star"></span></h1>
-	  		 		<p>Indulge yourself in random playful activities</p>
-	  		 		<p>spread across Adelaide CBD.</p>
-	  		</header>	    
-	    </div><!-- /headerwrap -->
+        <!-- ==== HEADERWRAP ==== -->
+        <div id="headerwrap" id="home" name="home">
+            <header class="clearfix">
+                <h1><span class="icon icon-trophy-star"></span></h1>
+                <p>Indulge yourself in random playful activities</p>
+                <p>spread across Adelaide CBD.</p>
+            </header>	    
+        </div><!-- /headerwrap -->
 
-		<!-- ==== GREYWRAP ==== -->
-		<div id="greywrap">
-			<div class="row">
-				<div class="col-lg-4 callout">
-					<span class="icon icon-location"></span>
-					<h2>Near You</h2>
-					<p>Get notified of events happening near you by a simple push notification on your Android or iOS device. </p>
-				</div><!-- col-lg-4 -->
-					
-				<div class="col-lg-4 callout">
-					<span class="icon icon-accessibility"></span>
-					<h2>Stay Healthy</h2>
-					<p>Do the activities regularly to get back in shape. </p>
-				</div><!-- col-lg-4 -->	
-				
-				<div class="col-lg-4 callout">
-					<span class="icon icon-coin"></span>
-					<h2>Redeem Points</h2>
-					<p>Exchange your points for discounts on your favorite meal at select Vendors. </p>
-				</div><!-- col-lg-4 -->	
-			</div><!-- row -->
-		</div><!-- greywrap -->
-		
-		<!-- ==== ABOUT ==== -->
-		<div class="container" id="about" name="about">
-			<div class="row white">
-			<br>
-				<h1 class="centered">A LITTLE ABOUT OUR INITIATIVE</h1>
-				<hr>
-				
-				<div class="col-lg-6">
-					<p>We believe ideas come from everyone, everywhere. In fact, at BlackTie, everyone within our agency walls is a designer in their own right. And there are a few principles we believe—and we believe everyone should believe—about our design craft. These truths drive us, motivate us, and ultimately help us redefine the power of design. We’re big believers in doing right by our neighbors. After all, we grew up in the Twin Cities and we believe this place has much to offer. So we do what we can to support the community we love.</p>
-				</div><!-- col-lg-6 -->
-				
-				<div class="col-lg-6">
-					<p>Over the past four years, we’ve provided more than $1 million in combined cash and pro bono support to Way to Grow, an early childhood education and nonprofit organization. Other community giving involvement throughout our agency history includes pro bono work for more than 13 organizations, direct giving, a scholarship program through the Minneapolis College of Art & Design, board memberships, and ongoing participation in the Keystone Club, which gives five percent of our company’s earnings back to the community each year.</p>
-				</div><!-- col-lg-6 -->
-			</div><!-- row -->
-		</div><!-- container -->
-		
-		<!-- ==== SECTION DIVIDER1 -->
-		<section class="section-divider textdivider divider1">
-			<div class="container">
-				<h1>DESIGN EXPAND BOUNDARIES</h1>
-				<hr>
-				<p>To achieve real change, we have to expand boundaries. Because the Wild West of what-could-be is unexplored but rife with opportunity.</p>
-			</div><!-- container -->
-		</section><!-- section -->
-		
-		
-		<!-- ==== SERVICES ==== -->
-		<div class="container" id="services" name="services">
-			<br>
-			<br>
-			<div class="row">
-				<h2 class="centered">OUT OF THE BOX THINKING, ALWAYS.</h2>
-				<hr>
-				<br>
-				<div class="col-lg-offset-2 col-lg-8">
-					<p>Employees and consumers. Two halves of a brand’s entirety, the whole of a brand’s audience. Sometimes these two halves have very different viewpoints, creating a weak spot in the brand story. Weakness tarnishes credibility. Brands that aren’t credible aren’t viable.
-					</p>
-					<p>We squash weakness by designing the whole brand story. It’s crafted around the truism held by employees and consumers to create an experience that connects from the inside out.</p>
-					<p>By being true to the brand we represent, we elevate the audiences’ relationship to it. Like becomes love becomes a passion. Passion becomes advocacy. And we see the brand blossom from within, creating a whole story the audience embraces. That’s when the brand can truly flex its muscles.</p>
-				</div><!-- col-lg -->
-			</div><!-- row -->
-			
-			<div class="row">
-				<h2 class="centered">ONE BRAND, ONE VOICE.</h2>
-				<hr>
-				<br>
-				<div class="col-lg-offset-2 col-lg-8">
-					<img class="img-responsive" src="assets/img/bg/sponsors.jpg" alt="Sponsors" usemap="#sponsors">
-                                        <!--
-                                        <map name="sponsors">
-                                            <area shape="rect" coords="0,0,1685,1353" href="www.unisa.edu.au" title="University of South Australia" alt="University of South Australia" />
-                                            <area shape="rect" coords="1686,0,5120,1349" href="www.mitisehealth.com" title="Mitise Health & Fitness" alt="Mitise Health & Fitness" />
-                                            <area shape="rect" coords="0,1350,5120,2893" href="www.adelaidecitycouncil.com" title="Adelaide City Council" alt="Adelaide City Council" />
-                                            <area shape="rect" coords="0,2894,5120,3840" href="www.australia.cmu.edu/" title="Carnegie Mellon University Australia" alt="Carnegie Mellon University Australia" />
-                                        </map>
-                                        -->
-				</div><!-- col -->
-			</div><!-- row -->
-		</div><!-- container -->
-  		
+        <!-- ==== GREYWRAP ==== -->
+        <div id="greywrap">
+            <div class="row">
+                <div class="col-lg-4 callout">
+                    <span class="icon icon-location"></span>
+                    <h2>Near You</h2>
+                    <p>Get notified of challenges and events happening near you by a simple push notification on your Android or iOS device. </p>
+                </div><!-- col-lg-4 -->
 
-		<!-- ==== SECTION DIVIDER2 -->
-		<section class="section-divider textdivider divider2">
-			<div class="container">
-				<h1>FIT eCITY IS AN INTERACTION</h1>
-				<hr>
-				<p>To develop a deeper and more meaningful connection with consumers, we believe design must invite them to take part in the conversation.</p>
-			</div><!-- container -->
-		</section><!-- section -->
+                <div class="col-lg-4 callout">
+                    <span class="icon icon-accessibility"></span>
+                    <h2>Stay Healthy</h2>
+                    <p>Do the activities regularly to compliment a healthy lifestyle. </p>
+                </div><!-- col-lg-4 -->	
 
-		<!-- ==== TEAM MEMBERS ==== -->
-		<div class="container" id="team" name="team">
-		<br>
-			<div class="row white centered">
-				<h1 class="centered">REGISTERED VENDORS</h1>
-				<hr>
-				<br>
-				<br>
-				<div class="col-lg-3 centered">
-					<img class="img img-circle" src="assets/img/vendors/mcdonalds.jpg" height="120px" width="120px" alt="">
-					<br>
-					<h4><b>Mc Donald's</b></h4>
-					<a href="#" class="icon icon-twitter"></a>
-					<a href="https://www.facebook.com/McDonaldsAU" class="icon icon-facebook"></a>
-					<a href="http://www.mcdonalds.com.au/" class="icon icon-link"></a>
-					<p>Australia’s first McDonald’s restaurant opened in Yagoona, Sydney, in 1971. Today there are more than 800 McDonald’s restaurants across Australia.</p>
-				</div><!-- col-lg-3 -->
-				
-				<div class="col-lg-3 centered">
-					<img class="img img-circle" src="assets/img/vendors/hungry-jacks.jpg" height="120px" width="120px" alt="">
-					<br>
-					<h4><b>Hungry Jack's</b></h4>
-					<a href="http://twitter.com/#!/hungry_jacks" class="icon icon-twitter"></a>
-					<a href="http://www.facebook.com/HungryJacks" class="icon icon-facebook"></a>
-					<a href="http://www.hungryjacks.com.au/" class="icon icon-link"></a>
-					<p>Hungry Jack's® is proudly Australian. It's simple: our flame-grilled beef, topped with fresh ingredients, explains why the burgers are better at Hungry Jack's®.</p>
-				</div><!-- col-lg-3 -->
-				
-				<div class="col-lg-3 centered">
-					<img class="img img-circle" src="assets/img/vendors/dominos.jpg" height="120px" width="120px" alt="">
-					<br>
-					<h4><b>Domino's Pizza</b></h4>
-					<a href="http://twitter.com/Dominos_AU" class="icon icon-twitter"></a>
-					<a href="http://www.facebook.com/DominosAustralia" class="icon icon-facebook"></a>
-					<a href="http://www.dominos.com.au/" class="icon icon-link"></a>
-					<p>Be a creative director is a hard task, but Michele loves what she does. Her combination of knowledge and expertise is an important pillar in our agency.</p>
-				</div><!-- col-lg-3 -->
-				
-				<div class="col-lg-3 centered">
-					<img class="img img-circle" src="assets/img/vendors/subway.jpg" height="120px" width="120px" alt="">
-					<br>
-					<h4><b>Subway</b></h4>
-					<a href="https://twitter.com/SubwayAustralia" class="icon icon-twitter"></a>
-					<a href="https://www.facebook.com/SubwayAustralia" class="icon icon-facebook"></a>
-					<a href="http://www.subway.com.au/" class="icon icon-link"></a>
-					<p>The SUBWAY® restaurant chain is the world's largest submarine sandwich franchise, with more than 40,000 locations in 100 countries.</p>
-				</div><!-- col-lg-3 -->
-				
-			</div><!-- row -->
-		</div><!-- container -->
+                <div class="col-lg-4 callout">
+                    <span class="icon icon-coin"></span>
+                    <h2>Redeem Points</h2>
+                    <p>Exchange your points for discounts at participating vendors. </p>
+                </div><!-- col-lg-4 -->	
+            </div><!-- row -->
+        </div><!-- greywrap -->
 
-		<!-- ==== GREYWRAP ==== -->
-                <!--
-		<div id="greywrap">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-8 centered">
-						<img class="img-responsive" src="assets/img/macbook.png" align="">
-					</div>
-					<div class="col-lg-4">
-						<h2>We Are Hiring!</h2>
-						<p>Do you want to be one of use? Sure you want, because we are an awesome team!. Here we work hard every day to craft pixel perfect sites.</p>
-						<p><a class="btn btn-success">Contact Us</a></p>
-					</div>	
-                -->
-                <!--
-				</div><!-- row -->
-		<!--
+        <!-- ==== ABOUT ==== -->
+        <div class="container" id="about" name="about">
+            <div class="row white">
+                <br>
+                <h1 class="centered">A LITTLE ABOUT OUR INITIATIVE</h1>
+                <hr>
+
+                <div class="col-lg-6">
+                    <p><b>Fit eCity</b> is about facilitating random acts of play throughout Adelaide City Council including parklands, laneways &…anywhere, really.  Exercise does not always spark excitement, so we incentivize play by allowing you to gain points towards discounts at various vendors around the Council. In collaboration with Adelaide City Council, University of South Australia – School of Health Sciences and Mitise Health & Fitness we are not only advising on ways to get and stay active, but we’re taking you by the hand and guiding your play time…randomly.</p>
+                </div><!-- col-lg-6 -->
+
+                <div class="col-lg-6">
+                    <p>So, on your time or with a gentle push from Fit eCity play now or play later…play more!</p>
+                </div><!-- col-lg-6 -->
+            </div><!-- row -->
+        </div><!-- container -->
+
+        <!-- ==== SECTION DIVIDER4 -->
+        <section class="section-divider textdivider divider4">
+            <div class="container">
+                <h1>INFOGRAPHICS</h1>
+                <hr>
+                <p>Some description goes here.</p>
+            </div><!-- container -->
+        </section><!-- section -->
+
+        <!-- ==== GREYWRAP ==== -->
+
+        <div id="greywrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2>Exercise Benefits</h2>
+                        <p>Exercise Benefits offer the standard services of a fitness centre at very reasonable prices and are also places where health sciences students can gain valuable practical experience in movement-based programs and where researchers use the facilities for physical activity measurement.<br/><br/>
+                            The Health and Fitness Centres are unique in SA as they are able to draw on the academic resources of the School of Health Sciences.</p>
+                    </div>
+                    <div class="col-lg-6 centered">
+                        <img class="img-responsive" src="assets/img/bg/Exercise benefits3.jpg" align="">
+                    </div>
+                </div><!-- row -->
+
+                <div class="row">
+                    <div class="col-lg-6 centered">
+                        <img class="img-responsive" src="assets/img/bg/Mitise.jpg" align="">
+                        <p>Mitise [RAW], Mitise Health & Fitness’ flagship new studio is now open, and we couldn’t be more excited!</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <h2>Mitise Health & Fitness</h2>
+                        <p>Bringing our high intensity, highly energetic brand of scientific physical conditioning to the general public, you can expect a wide variety of classes and memberships to suit all fitness types and personalities.<br/><br/>
+                            Mitise [RAW] is your one-stop shop for physical conditioning, nutrition advice and recovery, and with our trainers qualified in personal training, massage, high performance exercise kinesiology, holistic lifestyle coaching and injury prevention you can be sure you will be in expert hands.</p>
+                    </div>	                
+                </div><!-- row -->
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2>Carnegie Mellon University - Australia</h2>
+                        <p>The Master of Information Systems Management (MISM) is a 21 month degree that combines a comprehensive technology and business curriculum with a unique global educational experience. <br/><br/>
+                            Studying across Carnegie Mellon’s Adelaide and Pittsburgh, Pennsylvania, campuses, you will gain an international perspective by learning in the United States and Australia with a strong focus on the Asia Pacific region.</p>
+                    </div>
+                    <div class="col-lg-6 centered">
+                        <img class="img-responsive" src="assets/img/bg/cmua2.jpg" align="">
+                    </div>
+                </div><!-- row -->
+            </div>
+        </div>
+        <!-- greywrap -->
+        <!-- ==== SERVICES ==== -->
+        <div class="container" id="services" name="services">
+            <br>
+            <br>
+            <div class="row">
+                <h2 class="centered">ADELAIDE CITY COUNCIL</h2>
+                <hr>
+                <br>
+                <div class="col-lg-offset-2 col-lg-8">
+                    <p>The importance of physical activity in health and well-being is well known and for the most part well understood. But sometimes it’s hard to find time to get active. In my experience lack of time is the number one barrier that prevents people from participating in physical activity on a regular basis.</p>
+                    <p>The good news is that even short burst of physical activity will help your health. While the World Health Organisation recommends that you accumulate at least 150 minutes of moderate- to vigorous-intensity aerobic physical activity per week, you can collect it in bouts of 10 minutes or more.</p>
+                    <a href="http://www.activeambassador.adelaidecitycouncil.com/assets/articles-images/Be_Active_in_the_City_Calendar_-_September_2014_-_WEB.pdf" target="_blank"><img class="img-responsive" src="assets/img/bg/active ambassador2.jpg" align=""></a>
+                    <p>Become an <a href="http://www.activeambassador.adelaidecitycouncil.com/" target="_blank"><b>Active Ambassador</b></a> today and share with us your daily exercise routine in the City of Adelaide. Get hot tips on where to exercise in the City and enjoy our fun facts on what benefits daily exercise gives you!</p>
+                    <p>Here’s a few to get you started:</p>
+                    <ul>
+                        <li>Exercise gives you better quality sleep,</li>
+                        <li>Exercise strengthens your joints and</li>
+                        <li>Exercise releases stress.</li>
+                    </ul><br/>
+                    <p>Join in the conversation with other Active Ambassadors on Facebook and Twitter by using ‪<a href="https://twitter.com/hashtag/activeambassadors?src=hash" target="_blank">#‎activeambassadors‬‬</a> in your tweets and posts. It’s a great way to meet new friends, get motivated, and be inspired with new activities!</p>
+                </div><!-- col-lg -->
+            </div><!-- row -->
+        </div>
+        <!-- services -->
+
+        <!-- ==== SECTION DIVIDER1 -->
+        <!--
+        <section class="section-divider textdivider divider1">
+            <div class="container">
+                <h1>DESIGN EXPAND BOUNDARIES</h1>
+                <hr>
+                <p>To achieve real change, we have to expand boundaries. Because the Wild West of what-could-be is unexplored but rife with opportunity.</p>
+            </div><!-- container -->
+        <!--
+        </section><!-- section -->
+
+        <!-- ==== SERVICES ==== -->
+        <div class="container" id="services" name="services">
+            <br>
+            <br>
+            <div class="row">
+                <h2 class="centered">ONE BRAND, ONE VOICE.</h2>
+                <hr>
+                <br>
+                <div class="col-lg-offset-2 col-lg-8">
+                    <img class="img-responsive" src="assets/img/bg/sponsors.jpg" alt="Sponsors" id="Sponsors" usemap="#sponsors" onload="getCords();">
+                    <map name="sponsors">
+                        <area id="Map_UniSA" shape="rect" href="http://www.unisa.edu.au" target="_blank" title="University of South Australia" alt="University of South Australia" />
+                        <area id="Map_Mitise" shape="rect" href="http://www.mitisehealth.com" target="_blank" title="Mitise Health & Fitness" alt="Mitise Health & Fitness" />
+                        <area id="Map_ACC" shape="rect" href="http://www.adelaidecitycouncil.com" target="_blank" title="Adelaide City Council" alt="Adelaide City Council" />
+                        <area id="Map_CMUA" shape="rect" href="http://www.australia.cmu.edu/" target="_blank" title="Carnegie Mellon University Australia" alt="Carnegie Mellon University Australia" />
+                    </map>
+                </div><!-- col -->
+            </div><!-- row -->
+        </div><!-- container -->
+        <br/><br/>
+        <!-- ==== GREYWRAP ==== -->
+        <div id="greywrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 centered">
+                        <img class="img-responsive" src="assets/img/macbook.png" align="">
+                    </div>
+                    <div class="col-lg-4">
+                        <h2>Primary Vendor Advert</h2>
+                        <p>Some description goes here.</p>
+                        <p>
+                            <a href="" class="icon icon-twitter" target="_blank"></a>
+                            <a href="" class="icon icon-facebook" target="_blank"></a>
+                            <a href="" class="icon icon-link" target="_blank"></a>
+                        </p>
+                    </div>	
+                </div><!-- row -->
+            </div>
+            <br>
+            <br>
+        </div>
+        <!-- greywrap -->
+
+        <!-- ==== TEAM MEMBERS ==== -->
+        <div class="container" id="team" name="team">
+            <br>
+            <div class="row white centered">
+                <h1 class="centered">REGISTERED VENDORS</h1>
+                <hr>
+                <br>
+                <br>
+                <div class="col-lg-3 centered">
+                    <img class="img img-circle" src="assets/img/vendors/vendors.png" alt="">
+                    <br>
+                    <h4><b>Vendor A</b></h4>
+                    <a href="" class="icon icon-twitter" target="_blank"></a>
+                    <a href="" class="icon icon-facebook" target="_blank"></a>
+                    <a href="" class="icon icon-link" target="_blank"></a>
+                    <p>Some description goes here.</p>
+                </div><!-- col-lg-3 -->
+
+                <div class="col-lg-3 centered">
+                    <img class="img img-circle" src="assets/img/vendors/vendors.png" alt="">
+                    <br>
+                    <h4><b>Vendor B</b></h4>
+                    <a href="" class="icon icon-twitter" target="_blank"></a>
+                    <a href="" class="icon icon-facebook" target="_blank"></a>
+                    <a href="" class="icon icon-link" target="_blank"></a>
+                    <p>Some description goes here.</p>
+                </div><!-- col-lg-3 -->
+
+                <div class="col-lg-3 centered">
+                    <img class="img img-circle" src="assets/img/vendors/vendors.png" alt="">
+                    <br>
+                    <h4><b>Vendor C</b></h4>
+                    <a href="" class="icon icon-twitter" target="_blank"></a>
+                    <a href="" class="icon icon-facebook" target="_blank"></a>
+                    <a href="" class="icon icon-link" target="_blank"></a>
+                    <p>Some description goes here.</p>
+                </div><!-- col-lg-3 -->
+
+                <div class="col-lg-3 centered">
+                    <img class="img img-circle" src="assets/img/vendors/vendors.png" alt="">
+                    <br>
+                    <h4><b>Vendor D</b></h4>
+                    <a href="" class="icon icon-twitter" target="_blank"></a>
+                    <a href="" class="icon icon-facebook" target="_blank"></a>
+                    <a href="" class="icon icon-link" target="_blank"></a>
+                    <p>Some description goes here.</p>
+                </div><!-- col-lg-3 -->
+
+            </div><!-- row -->
+        </div><!-- container -->
+
+        <!-- ==== SECTION DIVIDER1 -->
+        <section class="section-divider textdivider divider1">
+            <div class="container">
+                <h1>INFOGRAPHICS</h1>
+                <hr>
+                <p>Some description goes here.</p>
+            </div><!-- container -->
+        </section><!-- section -->
+
+        <!-- ==== PORTFOLIO ==== -->
+        <div class="container" id="portfolio" name="portfolio">
+            <br>
+            <div class="row">
+                <br>
+                <h1 class="centered">WE CREATE COOL STUFF</h1>
+                <hr>
+                <br>
+                <br>
+            </div><!-- /row -->
+            <div class="container">
+                <div class="row">	
+
+                    <!-- PORTFOLIO IMAGE 1 -->
+                    <div class="col-md-4 ">
+                        <div class="grid mask">
+                            <figure>
+                                <img class="img-responsive" src="assets/img/portfolio/jumping-jacks.jpg" alt="Jumping Jacks">
+                                <figcaption>
+                                    <h5>JUMPING JACKS</h5>
+                                    <a data-toggle="modal" href="#Modal_Jumping_Jacks" class="btn btn-primary btn-lg">View Video</a>
+                                </figcaption><!-- /figcaption -->
+                            </figure><!-- /figure -->
+                        </div><!-- /grid-mask -->
+                    </div><!-- /col -->
+
+
+                    <!-- MODAL SHOW THE PORTFOLIO IMAGE. In this demo, all links point to this modal. You should create
+                         a modal for each of your projects. -->
+
+                    <div class="modal fade" id="Modal_Jumping_Jacks" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title">Jumping Jacks</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p align="center"><iframe width="560" height="315" src="http://www.youtube.com/embed/c4DAnQ6DtF8" frameborder="0" allowfullscreen></iframe></p>
+                                    <!-- <p><img class="img-responsive" src="assets/img/portfolio/folio01.jpg" alt=""></p>-->
+                                    <p>Jumping Jacks are a great addition to any at home cardio workout.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                    </div><!-- /.modal -->
+
+
+                    <!-- PORTFOLIO IMAGE 2 -->
+                    <div class="col-md-4">
+                        <div class="grid mask">
+                            <figure>
+                                <img class="img-responsive" src="assets/img/portfolio/one-finger-push-up.jpg" alt="One finger push up">
+                                <figcaption>
+                                    <h5>ONE FINGER PUSH UP</h5>
+                                    <a data-toggle="modal" href="#Modal_Push_Ups" class="btn btn-primary btn-lg">View Video</a>
+                                </figcaption><!-- /figcaption -->
+                            </figure><!-- /figure -->
+                        </div><!-- /grid-mask -->
+                    </div><!-- /col -->
+
+                    <div class="modal fade" id="Modal_Push_Ups" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title">Jumping Jacks</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p align="center"><iframe width="560" height="315" src="http://www.youtube.com/embed/n23jEbQXYtA" frameborder="0" allowfullscreen></iframe></p>
+                                    <!-- <p><img class="img-responsive" src="assets/img/portfolio/folio01.jpg" alt=""></p>-->
+                                    <p>The most one finger push ups in 30 seconds was 41 and was achieved by Xie Guizhong (China) on the set of CCTV- Guinness World Records.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                    </div><!-- /.modal -->
+
+                    <!-- PORTFOLIO IMAGE 3 -->
+                    <div class="col-md-4">
+                        <div class="grid mask">
+                            <figure>
+                                <img class="img-responsive" src="assets/img/portfolio/one-leg-hop.jpg" alt="">
+                                <figcaption>
+                                    <h5>SINGLE LEG HOPS</h5>
+                                    <a data-toggle="modal" href="#Modal_One_Leg_Hop" class="btn btn-primary btn-lg">View Video</a>
+                                </figcaption><!-- /figcaption -->
+                            </figure><!-- /figure -->
+                        </div><!-- /grid-mask -->
+                    </div><!-- /col -->
+                </div><!-- /row -->
+
+                <div class="modal fade" id="Modal_One_Leg_Hop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h4 class="modal-title">Jumping Jacks</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p align="center"><iframe width="420" height="315" src="http://www.youtube.com/embed/0ny5JiGGv3s" frameborder="0" allowfullscreen></iframe></p>
+                                <!-- <p><img class="img-responsive" src="assets/img/portfolio/folio01.jpg" alt=""></p>-->
+                                <p>Stand with your body weight balanced on one leg. Hold your arms out by your sides for balance. 
+                                    Repeatedly jump forward on one foot for a distance of 10 to 15 meters. 
+                                    Focus on horizontal distance with each hop, and make sure you hop continuously.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
+
+                <!-- PORTFOLIO IMAGE 4 -->
+                <div class="row">	
+                    <div class="col-md-4 ">
+                        <div class="grid mask">
+                            <figure>
+                                <img class="img-responsive" src="assets/img/portfolio/folio04.jpg" alt="">
+                                <figcaption>
+                                    <h5>PROFILE</h5>
+                                    <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Take a Look</a>
+                                </figcaption><!-- /figcaption -->
+                            </figure><!-- /figure -->
+                        </div><!-- /grid-mask -->
+                    </div><!-- /col -->
+
+                    <!-- PORTFOLIO IMAGE 5 -->
+                    <div class="col-md-4">
+                        <div class="grid mask">
+                            <figure>
+                                <img class="img-responsive" src="assets/img/portfolio/folio05.jpg" alt="">
+                                <figcaption>
+                                    <h5>TWITTER STATUS</h5>
+                                    <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Take a Look</a>
+                                </figcaption><!-- /figcaption -->
+                            </figure><!-- /figure -->
+                        </div><!-- /grid-mask -->
+                    </div><!-- /col -->
+
+                    <!-- PORTFOLIO IMAGE 6 -->
+                    <div class="col-md-4">
+                        <div class="grid mask">
+                            <figure>
+                                <img class="img-responsive" src="assets/img/portfolio/folio06.jpg" alt="">
+                                <figcaption>
+                                    <h5>PHONE MOCKUP</h5>
+                                    <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Take a Look</a>
+                                </figcaption><!-- /figcaption -->
+                            </figure><!-- /figure -->
+                        </div><!-- /grid-mask -->
+                    </div><!-- /col -->
+                </div><!-- /row -->
+                <br>
+                <br>
+            </div><!-- /row -->
+        </div><!-- /container -->
+
+        <!-- ==== SECTION DIVIDER2 ==== -->
+        <section class="section-divider textdivider divider2">
+            <div class="container">
+                <h1>INFOGRAPHICS</h1>
+                <hr>
+                <p>Some description goes here.</p>
+            </div><!-- container -->
+        </section><!-- section -->
+
+        <!-- ==== BLOG ==== -->
+        <div class="container" id="blog" name="blog">
+            <br>
+            <div class="row">
+                <br>
+                <h1 class="centered">TESTIMONIALS</h1>
+                <hr>
+                <br>
+                <br>
+            </div><!-- /row -->
+
+            <div class="row">
+                <div class="col-lg-6 blog-bg">
+                    <div class="col-lg-4 centered">
+                        <br>
+                        <p><img class="img img-circle" src="assets/img/portfolio/user_male.png" width="60px" height="60px"></p>
+                        <h4>Joseph Campbell</h4>
+                        <h5>University of South Australia.</h5>
+                    </div>
+                    <div class="col-lg-8 blog-content">
+                        <h2>Testimonial 1</h2>
+                        <p>Some description goes here.</p>
+                        <p><a href="http://www.unisa.edu.au" class="icon icon-link" target="_blank"> University of South Australia</a></p>
+                        <br>
+                    </div>
+                </div><!-- /col -->
+
+                <div class="col-lg-6 blog-bg">
+                    <div class="col-lg-4 centered">
+                        <br>
+                        <p><img class="img img-circle" src="assets/img/portfolio/user_male.png" width="60px" height="60px" alt=""></p>
+                        <h4>Josh Mitise</h4>
+                        <h5>Mitise Health & Fitness.</h5>
+                    </div>
+                    <div class="col-lg-8 blog-content">
+                        <h2>Testimonial 2</h2>
+                        <p>Some description goes here.</p>
+                        <p><a href="http://www.mitisehealth.com" class="icon icon-link" target="_blank"> Mitise Health & Fitness</a></p>
+                        <br>
+                    </div>
+                </div><!-- /col -->
+            </div><!-- /row -->
+            <br>
+            <br>
+        </div><!-- /container -->
+
+
+        <!-- ==== SECTION DIVIDER6 ==== -->
+        <section class="section-divider textdivider divider6">
+            <div class="container">
+                <h1>CRAFTED IN ADELAIDE, AUSTRALIA.</h1>
+                <hr>
+                <p>Colonel Light Centre, 25 Pirie St, Adelaide SA 5000</p>
+                <p>(08) 8203 7203</p>
+                <p><a class="icon icon-twitter" href="https://twitter.com/cityofadelaide" target="_blank"></a> | <a class="icon icon-facebook" href="https://www.facebook.com/pages/City-of-Adelaide/179523605276" target="_blank"></a></p>
+            </div><!-- container -->
+        </section><!-- section -->
+
+        <div class="container" id="contact" name="contact">
+            <div class="row">
+                <br>
+                <h1 class="centered">THANKS FOR VISITING US</h1>
+                <hr>
+                <br><br>
+                <div class="col-lg-3">
+                    <h3>Adelaide City Council</h3>
+                    <p> <span class="icon icon-home"></span> Colonel Light Centre,<br/>25 Pirie St, Adelaide SA 5000 <br/>
+                        <span class="icon icon-phone"></span> (08) 8203 7203 <br/>
+                        <!--	<span class="icon icon-mobile"></span> +34 59855 9853 <br/> -->
+                        <span class="icon icon-envelop"></span> <a href="mailto:city@adelaidecitycouncil.com" target="_blank"> city@adelaidecitycouncil.com</a> <br/>
+                        <span class="icon icon-twitter"></span> <a href="https://twitter.com/cityofadelaide" target="_blank"> @CityofAdelaide </a> <br/>
+                        <span class="icon icon-facebook"></span> <a href="https://www.facebook.com/pages/City-of-Adelaide/179523605276" target="_blank"> City of Adelaide </a> <br/>
+                    </p>
+                </div><!-- col -->
+
+                <div class="col-lg-3">
+                    <h3>Carnegie Mellon University Australia</h3>
+                    <p> <span class="icon icon-home"></span> Torrens Bldg, 220 Victoria Square, Adelaide SA 5000 <br/>
+                        <span class="icon icon-phone"></span> (08) 8110 9900 <br/>
+                        <span class="icon icon-key"></span> CRICOS Provider No. 02696B <br/>
+                        <span class="icon icon-envelop"></span> <a href="mailto:info@cmu.edu.au" target="_blank"> info@cmu.edu.au</a> <br/>
+                        <span class="icon icon-twitter"></span> <a href="https://twitter.com/CMUAustralia" target="_blank"> @CMUAustralia </a> <br/>
+                        <span class="icon icon-facebook"></span> <a href="https://www.facebook.com/CMUAustralia" target="_blank"> CMU Australia </a> <br/>
+                    </p>
+                </div><!-- col -->
+
+                <div class="col-lg-3">
+                    <h3>Mitise Health & Fitness</h3>
+                    <p> <span class="icon icon-home"></span> Josh Smith, Director<br/>
+                        <span class="icon icon-mobile"></span> +61 430-105-296 <br/>
+                        <span class="icon icon-envelop"></span> <a href="mailto:city@adelaidecitycouncil.com" target="_blank"> city@adelaidecitycouncil.com</a> <br/>
+                        <span class="icon icon-twitter"></span> <a href="https://twitter.com/MitiseHealth" target="_blank"> @MitiseHealth </a> <br/>
+                        <span class="icon icon-facebook"></span> <a href="https://www.facebook.com/mitisehealth" target="_blank"> Mitise Health & Fitness </a> <br/>
+                    </p>
+                </div><!-- col -->
+
+                <div class="col-lg-3">
+                    <h3>City East Health and Fitness Centre</h3>
+                    <p> <span class="icon icon-home"></span> Centenary bldg, Level 2, City E. Campus, Corner N. Tce & Frome Rd, Adelaide, SA 5000<br/>
+                        <span class="icon icon-phone"></span> (08) 8302 1496<br/>
+                        <!--	<span class="icon icon-mobile"></span> +34 59855 9853 <br/> -->
+                        <span class="icon icon-envelop"></span> <a href="mailto:joseph.campbell@unisa.edu.au" target="_blank"> joseph.campbell@unisa.edu.au</a> <br/>
+                        <span class="icon icon-facebook"></span> <a href="https://www.facebook.com/pages/City-of-Adelaide/179523605276" target="_blank"> City of Adelaide </a> <br/>
+                    </p>
+                </div><!-- col -->
+                <!-- 
+                <div class="col-lg-4">
+                    <h3></h3>
+                    <p>Register to our system and get notified of discounts and offers near you.</p>
+                    <p>
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <label for="inputEmail1" class="col-lg-4 control-label"></label>
+                            <div class="col-lg-10">
+                                <input type="email" class="form-control" id="inputEmail1" placeholder="Email">
+                            </div>
                         </div>
-			<br>
-			<br>
-		</div>
-                -->
-                <!-- greywrap -->		
-		<!-- ==== SECTION DIVIDER3 -->
-		<section class="section-divider textdivider divider3">
-			<div class="container">
-				<h1>DESIGN SOLVE PROBLEMS</h1>
-				<hr>
-				<p>From the purely practical to the richly philosophical, design is the solution to a host of challenges.</p>
-			</div><!-- container -->
-		</section><!-- section -->
-		
-		<!-- ==== PORTFOLIO ==== -->
-		<div class="container" id="portfolio" name="portfolio">
-		<br>
-			<div class="row">
-				<br>
-				<h1 class="centered">WE CREATE COOL STUFF</h1>
-				<hr>
-				<br>
-				<br>
-			</div><!-- /row -->
-			<div class="container">
-			<div class="row">	
-			
-				<!-- PORTFOLIO IMAGE 1 -->
-				<div class="col-md-4 ">
-			    	<div class="grid mask">
-						<figure>
-							<img class="img-responsive" src="assets/img/portfolio/jumping-jacks.jpg" alt="Jumping Jacks">
-							<figcaption>
-								<h5>JUMPING JACKS</h5>
-								<a data-toggle="modal" href="#Modal_Jumping_Jacks" class="btn btn-primary btn-lg">View Video</a>
-							</figcaption><!-- /figcaption -->
-						</figure><!-- /figure -->
-			    	</div><!-- /grid-mask -->
-				</div><!-- /col -->
-				
-				
-						 <!-- MODAL SHOW THE PORTFOLIO IMAGE. In this demo, all links point to this modal. You should create
-						      a modal for each of your projects. -->
-						      
-						  <div class="modal fade" id="Modal_Jumping_Jacks" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-						    <div class="modal-dialog">
-						      <div class="modal-content">
-						        <div class="modal-header">
-						          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-						          <h4 class="modal-title">Jumping Jacks</h4>
-						        </div>
-						        <div class="modal-body">
-                                                          <p align="center"><iframe width="560" height="315" src="//www.youtube.com/embed/c4DAnQ6DtF8" frameborder="0" allowfullscreen></iframe></p>
-						          <!-- <p><img class="img-responsive" src="assets/img/portfolio/folio01.jpg" alt=""></p>-->
-						          <p>Jumping Jacks are a great addition to any at home cardio workout.</p>
-						        </div>
-						        <div class="modal-footer">
-						          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						        </div>
-						      </div><!-- /.modal-content -->
-						    </div><!-- /.modal-dialog -->
-						  </div><!-- /.modal -->
-				
-				
-				<!-- PORTFOLIO IMAGE 2 -->
-				<div class="col-md-4">
-			    	<div class="grid mask">
-						<figure>
-							<img class="img-responsive" src="assets/img/portfolio/one-finger-push-up.jpg" alt="One finger push up">
-							<figcaption>
-								<h5>ONE FINGER PUSH UP</h5>
-								<a data-toggle="modal" href="#Modal_Push_Ups" class="btn btn-primary btn-lg">View Video</a>
-							</figcaption><!-- /figcaption -->
-						</figure><!-- /figure -->
-			    	</div><!-- /grid-mask -->
-				</div><!-- /col -->
-                                
-                                                  <div class="modal fade" id="Modal_Push_Ups" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-						    <div class="modal-dialog">
-						      <div class="modal-content">
-						        <div class="modal-header">
-						          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-						          <h4 class="modal-title">Jumping Jacks</h4>
-						        </div>
-						        <div class="modal-body">
-                                                          <p align="center"><iframe width="560" height="315" src="//www.youtube.com/embed/n23jEbQXYtA" frameborder="0" allowfullscreen></iframe></p>
-						          <!-- <p><img class="img-responsive" src="assets/img/portfolio/folio01.jpg" alt=""></p>-->
-						          <p>The most one finger push ups in 30 seconds was 41 and was achieved by Xie Guizhong (China) on the set of CCTV- Guinness World Records.</p>
-						        </div>
-						        <div class="modal-footer">
-						          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						        </div>
-						      </div><!-- /.modal-content -->
-						    </div><!-- /.modal-dialog -->
-						  </div><!-- /.modal -->
-				
-				<!-- PORTFOLIO IMAGE 3 -->
-				<div class="col-md-4">
-			    	<div class="grid mask">
-						<figure>
-							<img class="img-responsive" src="assets/img/portfolio/one-leg-hop.jpg" alt="">
-							<figcaption>
-								<h5>SINGLE LEG HOPS</h5>
-								<a data-toggle="modal" href="#Modal_One_Leg_Hop" class="btn btn-primary btn-lg">View Video</a>
-							</figcaption><!-- /figcaption -->
-						</figure><!-- /figure -->
-			    	</div><!-- /grid-mask -->
-				</div><!-- /col -->
-			</div><!-- /row -->
-                        
-                                                  <div class="modal fade" id="Modal_One_Leg_Hop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-						    <div class="modal-dialog">
-						      <div class="modal-content">
-						        <div class="modal-header">
-						          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-						          <h4 class="modal-title">Jumping Jacks</h4>
-						        </div>
-						        <div class="modal-body">
-                                                          <p align="center"><iframe width="420" height="315" src="//www.youtube.com/embed/0ny5JiGGv3s" frameborder="0" allowfullscreen></iframe></p>
-						          <!-- <p><img class="img-responsive" src="assets/img/portfolio/folio01.jpg" alt=""></p>-->
-						          <p>Stand with your body weight balanced on one leg. Hold your arms out by your sides for balance. 
-                                                             Repeatedly jump forward on one foot for a distance of 10 to 15 meters. 
-                                                             Focus on horizontal distance with each hop, and make sure you hop continuously.</p>
-						        </div>
-						        <div class="modal-footer">
-						          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						        </div>
-						      </div><!-- /.modal-content -->
-						    </div><!-- /.modal-dialog -->
-						  </div><!-- /.modal -->
+                        <div class="form-group">
+                            <label for="text1" class="col-lg-4 control-label"></label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" id="text1" placeholder="Your Name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-10">
+                                <button type="submit" class="btn btn-success">Sign in</button>
+                            </div>
+                        </div>
+                    </form><!-- form -->
+                <!--
+                    </p>
+                </div><!-- col -->
 
-				<!-- PORTFOLIO IMAGE 4 -->
-			<div class="row">	
-				<div class="col-md-4 ">
-			    	<div class="grid mask">
-						<figure>
-							<img class="img-responsive" src="assets/img/portfolio/folio04.jpg" alt="">
-							<figcaption>
-								<h5>PROFILE</h5>
-								<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Take a Look</a>
-							</figcaption><!-- /figcaption -->
-						</figure><!-- /figure -->
-			    	</div><!-- /grid-mask -->
-				</div><!-- /col -->
-				
-				<!-- PORTFOLIO IMAGE 5 -->
-				<div class="col-md-4">
-			    	<div class="grid mask">
-						<figure>
-							<img class="img-responsive" src="assets/img/portfolio/folio05.jpg" alt="">
-							<figcaption>
-								<h5>TWITTER STATUS</h5>
-								<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Take a Look</a>
-							</figcaption><!-- /figcaption -->
-						</figure><!-- /figure -->
-			    	</div><!-- /grid-mask -->
-				</div><!-- /col -->
-				
-				<!-- PORTFOLIO IMAGE 6 -->
-				<div class="col-md-4">
-			    	<div class="grid mask">
-						<figure>
-							<img class="img-responsive" src="assets/img/portfolio/folio06.jpg" alt="">
-							<figcaption>
-								<h5>PHONE MOCKUP</h5>
-								<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Take a Look</a>
-							</figcaption><!-- /figcaption -->
-						</figure><!-- /figure -->
-			    	</div><!-- /grid-mask -->
-				</div><!-- /col -->
-			</div><!-- /row -->
-			<br>
-			<br>
-		</div><!-- /row -->
-	</div><!-- /container -->
+            </div><!-- row -->
 
-		<!-- ==== SECTION DIVIDER4 ==== -->
-		<section class="section-divider textdivider divider4">
-			<div class="container">
-				<h1>DESIGN CREATES EMOTIONAL CONNECTION</h1>
-				<hr>
-				<p>There’s more to design than meets the eye. It’s when it meets the heart that design creates a meaningful, lasting connection with the audience.</p>
-			</div><!-- container -->
-		</section><!-- section -->
-		
-		<!-- ==== BLOG ==== -->
-		<div class="container" id="blog" name="blog">
-		<br>
-			<div class="row">
-				<br>
-				<h1 class="centered">TESTIMONIALS</h1>
-				<hr>
-				<br>
-				<br>
-			</div><!-- /row -->
-			
-			<div class="row">
-				<div class="col-lg-6 blog-bg">
-					<div class="col-lg-4 centered">
-					<br>
-						<p><img class="img img-circle" src="assets/img/vendors/team04.jpg" width="60px" height="60px"></p>
-						<h4>Joseph Campbell</h4>
-						<h5>University of South Australia.</h5>
-					</div>
-					<div class="col-lg-8 blog-content">
-						<h2>We Define Success</h2>
-						<p>Armed with insight, we embark on designing the right brand experience that engages the audience. It encompasses both the strategic direction and creative execution that solves a business problem and brings the brand to life.</p>
-						<p>In the create phase, the big idea is unleashed to the world through different media touchpoints. This is when we watch the audience fall in love all over again with our client’s brand.</p>
-						<p><a href="www.unisa.edu.au" class="icon icon-link"> University of South Australia</a></p>
-						<br>
-					</div>
-				</div><!-- /col -->
-				
-				<div class="col-lg-6 blog-bg">
-					<div class="col-lg-4 centered">
-					<br>
-						<p><img class="img img-circle" src="assets/img/vendors/team01.jpg" width="60px" height="60px" alt=""></p>
-						<h4>Josh Mitise</h4>
-						<h5>Mitise Health & Fitness.</h5>
-					</div>
-					<div class="col-lg-8 blog-content">
-						<h2>A Beautiful Story</h2>
-						<p>Armed with insight, we embark on designing the right brand experience that engages the audience. It encompasses both the strategic direction and creative execution that solves a business problem and brings the brand to life.</p>
-						<p>In the create phase, the big idea is unleashed to the world through different media touchpoints. This is when we watch the audience fall in love all over again with our client’s brand.</p>
-						<p><a href="www.mitisehealth.com" class="icon icon-link"> Mitise Health & Fitness</a></p>
-						<br>
-					</div>
-				</div><!-- /col -->
-			</div><!-- /row -->
-			<br>
-			<br>
-		</div><!-- /container -->
+        </div><!-- container -->
+        <!-- ==== GREYWRAP ==== -->
+        <div id="greywrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 centered">
+                        <img class="img-responsive" src="assets/img/portfolio/app store.jpg" align="">
+                    </div>
+                    <div class="col-lg-4">
+                        <h2>Download now</h2>
+                        <p>Download the latest version of our<br/>Fit eCity app for Android and iOS today.</p>
+                    </div>	
+                </div><!-- row -->
+            </div>
+            <br>
+            <br>
+        </div>
+        <!-- greywrap -->
 
-		
-		<!-- ==== SECTION DIVIDER6 ==== -->
-		<section class="section-divider textdivider divider6">
-			<div class="container">
-				<h1>CRAFTED IN ADELAIDE, AUSTRALIA.</h1>
-				<hr>
-				<p>25 Pirie St, Adelaide SA 5000</p>
-				<p>(08) 8203 7203</p>
-				<p><a class="icon icon-twitter" href="https://twitter.com/cityofadelaide"></a> | <a class="icon icon-facebook" href="https://www.facebook.com/pages/City-of-Adelaide/179523605276"></a></p>
-			</div><!-- container -->
-		</section><!-- section -->
-		
-		<div class="container" id="contact" name="contact">
-			<div class="row">
-			<br>
-				<h1 class="centered">THANKS FOR VISITING US</h1>
-				<hr>
-				<br>
-				<br>
-				<div class="col-lg-4">
-					<h3>Contact Information</h3>
-					<p><span class="icon icon-home"></span> 25 Pirie St, Adelaide SA 5000 <br/>
-						<span class="icon icon-phone"></span> (08) 8203 7203 <br/>
-					<!--	<span class="icon icon-mobile"></span> +34 59855 9853 <br/> -->
-						<span class="icon icon-envelop"></span> <a href="mailto:city@adelaidecitycouncil.com"> city@adelaidecitycouncil.com</a> <br/>
-						<span class="icon icon-twitter"></span> <a href="https://twitter.com/cityofadelaide"> @CityofAdelaide </a> <br/>
-						<span class="icon icon-facebook"></span> <a href="https://www.facebook.com/pages/City-of-Adelaide/179523605276"> City of Adelaide </a> <br/>
-					</p>
-				</div><!-- col -->
-				
-				<div class="col-lg-4">
-					<h3>Register Now!</h3>
-					<p>Register to our system and get notified of discounts and offers near you.</p>
-					<p>
-						<form class="form-horizontal" role="form">
-						  <div class="form-group">
-						    <label for="inputEmail1" class="col-lg-4 control-label"></label>
-						    <div class="col-lg-10">
-						      <input type="email" class="form-control" id="inputEmail1" placeholder="Email">
-						    </div>
-						  </div>
-						  <div class="form-group">
-						    <label for="text1" class="col-lg-4 control-label"></label>
-						    <div class="col-lg-10">
-						      <input type="text" class="form-control" id="text1" placeholder="Your Name">
-						    </div>
-						  </div>
-						  <div class="form-group">
-						    <div class="col-lg-10">
-						      <button type="submit" class="btn btn-success">Sign in</button>
-						    </div>
-						  </div>
-					   </form><!-- form -->
-					</p>
-				</div><!-- col -->
-				
-				<div class="col-lg-4">
-					<h3>Download Now</h3>
-                                        <p>Download our app today and start playing!</p>
-                                        
-				</div><!-- col -->
+        <div id="footerwrap">
+            <div class="container">
+                <h4>Created by <a href="http://www.australia.cmu.edu/" target="_blank">Carnegie Mellon University - Australia</a> - Copyright <span id="year"></span></h4>
+            </div>
+        </div>
 
-			</div><!-- row -->
-		
-		</div><!-- container -->
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
 
-		<div id="footerwrap">
-			<div class="container">
-                            <h4>Created by <a href="http://australia.cmu.edu/">Carnegie Mellon University - Australia</a> - Copyright <span id="year"></span></h4>
-			</div>
-		</div>
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-	
         <script>
             function getYear() {
-            var d = new Date();var n = d.getFullYear();
-            document.getElementById("year").innerHTML = n; }
+                var d = new Date();
+                var n = d.getFullYear();
+                document.getElementById("year").innerHTML = n;
+            }
         </script>
+        <script>
+            function getCords() {
+                var img = document.getElementById("Sponsors");
+                var width = img.clientWidth;
+                var height = img.clientHeight;
 
-	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="assets/js/retina.js"></script>
-	<script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script>
-    <script type="text/javascript" src="assets/js/smoothscroll.js"></script>
-	<script type="text/javascript" src="assets/js/jquery-func.js"></script>
-  </body>
+                var UniSAWidth = width * 0.329;
+                var UniSAHeight = height * 0.351;
+                var UniSACoords = "0,0," + UniSAWidth + "," + UniSAHeight;
+
+                var MitiseWidth = width;
+                var MitiseHeight = UniSAHeight + 1;
+                var MitiseCoords = (UniSAWidth + 1) + ",0," + MitiseWidth + "," + MitiseHeight;
+
+                var ACCWidth = width;
+                var ACCHeight = height * 0.753;
+                var ACCCoords = "0," + (MitiseHeight + 1) + "," + ACCWidth + "," + ACCHeight;
+
+                var CMUAWidth = width;
+                var CMUAHeight = height;
+                var CMUACoords = "0," + (ACCHeight + 1) + "," + CMUAWidth + "," + CMUAHeight;
+
+                document.getElementById("Map_UniSA").coords = UniSACoords;
+                document.getElementById("Map_Mitise").coords = MitiseCoords;
+                document.getElementById("Map_ACC").coords = ACCCoords;
+                document.getElementById("Map_CMUA").coords = CMUACoords;
+
+//"0,0,1685,1353" 
+//coords="1686,0,5120,1349"
+//coords="0,1350,5120,2893" 
+//coords="0,2894,5120,3840"
+            }
+        </script>
+        <script src="assets/js/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
+        <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="assets/js/retina.js"></script>
+        <script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="assets/js/smoothscroll.js"></script>
+        <script type="text/javascript" src="assets/js/jquery-func.js"></script>
+    </body>
 </html>
